@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de etiquetas HTML</title>
+
+<!-- Etiquetas que influyen en el SEO -->
+    <meta name="author" content="AlejandroCortés">
+    <meta name="description" content="Recopilatorio de etiquetas HTML">
+    <meta name="keyword" content="HTML, imágenes, desarollo web, diseño web, catalogo de etiqeutas,">
+    <title>Catálogo HTML</title>
+    <link rel="shortcut icon" href="img/www_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!--Soy un comentarío-->>
+    <header>
+        <picture id="subir1">
+            <source srcset="img/header_500.avif" media="(max-width: 500px)">
+            <source srcset="img/header_1100.avif" media="(max-width: 1100px)">
+            <img src="img/header_1920.avif" alt="Ordenador para programar">        
+        </picture>
+        <h1>Etiquetas HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="Catalogo.html">Inicio</a></li>
+                <li><a href="Imagenes.html">Imagenes</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="sementica.html">Semántica</a></li>
+    
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <p id="copyright">&copy;AlejandroCortés</p>
+        <p>Curso <span>2024</span></p>
+    </footer>
+
+    <div>
+        <h1>Prueba de texto</h1>
+    </div>
     <!-- 1. Etiquetas de texto -->
     <!-- 1.1 - Títulos  -->
-        <nombre_etiqueta>Contenido</nombre_etiqueta>
+        <!-- <nombre_etiqueta>Contenido</nombre_etiqueta>
         <nombre_etiqueta>
         <nombre_etiqueta nombre_atributo="valor">Contenido</nombre_etiqueta>
-        <nombre_etiqueta atributo_booleano>Contenido</nombre_etiqueta>
-
+        <nombre_etiqueta atributo_booleano>Contenido</nombre_etiqueta> -->
+        <a id="irAbajo" href="#footer1">Ir abajo</a>
         <!-- Estas son las etiquetas para poner un título -->
         <!-- Atencion:  No existe H7 -->
-        <h1 id="titulo1">Soy un titulo h1</h1>
+        <h1>Soy un título h1</h1>
         <h2>Soy un h2</h2>
         <h3>Soy un h3</h3>
         <h4>Soy un h4</h4>
@@ -39,6 +74,8 @@
         <!-- Etiqueta para citar textualmente -->
         <p>Una frase famosa de <cite>Galileo</cite> fue:</p>
         <blockquote>"...Sin embargo se mueve"</blockquote>
+        <!-- Ejemplo de cita corta -->
+        <p>Ejemplo de cita corta:<cite>Sócrates</cite> dijo <q>Conócete a ti mismo</q></p>
 
     <!-- 2 Listas -->
     <!-- 2.1 Listas desordenadas -->
@@ -92,38 +129,49 @@
     </table>
 
     <!-- 4. Imágenes -->
-    <!-- Alt es una etiqueta semantica (muy relevante en SEO) -->
-    <img src="img/Café.jpg" alt="Texto alternativo a la imagen jpg" width="48%" height="48%">
-    <!-- Esta imagen esta contenida en "figure" para poder añadir un pie de foto "figcaption" -->
-    <figure>
-        <img src="img/Café.webp" alt="Texto alternativo a la imagen webp" width="50%" title="Café buenísimo">
-        <figcaption><small>Café delicioso por la mañana (fulanito)</small></figcaption>
-    </figure>
-    <!-- <img src="img/5376.jpg" alt="" sizes="(max-width: 430px) 100vw, (max-width: 800px) 100vw, (max-width: 1200px) vw100" srcset="img/3024 3024w img/4480.jpg 4480w img/5376.jpg 5376w"> -->
+        <!-- Alt es una etiqueta semantica (muy relevante en SEO) -->
+        <img src="img/Café.jpg" alt="Texto alternativo a la imagen jpg" width="400px">
+        <!-- Esta imagen esta contenida en "figure" para poder añadir un pie de foto "figcaption" -->
+        <figure>
+            <img src="img/Café.webp" alt="Texto alternativo a la imagen webp" width="400px" title="Café buenísimo">
+            <figcaption><small>Café delicioso por la mañana (fulanito)</small></figcaption>
+        </figure>
+        <!-- <img src="img/5376.jpg" alt="" sizes="(max-width: 430px) 100vw, (max-width: 800px) 100vw, (max-width: 1200px) vw100" srcset="img/3024 3024w img/4480.jpg 4480w img/5376.jpg 5376w"> -->
+    
+        <picture>
+            <source srcset="img/4032.jpg" width="650px" media="(min-width: 650px)">
+            <source srcset="img/4480.jpg" width="1200px" media="(min-width: 1200px)">
+            <source srcset="img/5376.jpg" width="1920px" media="(min-width: 1920px)">
 
+            <img src="img/5376.jpg" alt="Img Café granos y galleta">
+        </picture>
 
     <!-- 5. Links -->
-    <a href="https://www.google.es" target="_blank">Ir a Google</a>
-    <a href="#titulo1">Volver arriba</a>
-    <a href="https://undraw.co/" target="_blank" ><img src="img/coffee-gif.gif" alt="Gif" width="100px"></a>
+        <a href="https://undraw.co/" target="_blank" ><img src="img/coffee-gif.gif" alt="Gif" width="400px" title="Ir a undraw.co"></a>
+        <br>
+        <a href="https://www.google.es" target="_blank">Ir a Google</a> <br>
+        <a id="footer1" href="#subir1">Volver arriba</a> <br>
+        <br>
 
 
+    <!-- 6.Etiquetas para maquetar -->
 
+         <div>Hola mundo</div> <!--etiqueta de bloque -->
+         <span>Hola mundo</span> <!--etiqueta de linea -->
+         <span>Hola mundo</span>
 
+         <header></header> <!-- solo un header en el body, suele contener el nav y el h1 -->
+         <nav></nav> <!--Menu de navegacion -->
+         <main> <!--Para lo principal de la pagina-->
+              <aside></aside> <!--Publicidad (no tiene quen ver con el contenido principal!sty) -->
+             <section>
+                <article></article> <!--Para los articulos-->
+             </section> <!--Para definir secciones -->
+         </main> 
+         <footer></footer> <!--Redes sociales, contacto, avisos legales-->
 
+    <!-- Como poner imagen de cabecera -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+          
 </body>
 </html>
