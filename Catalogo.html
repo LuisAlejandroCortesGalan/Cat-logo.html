@@ -12,9 +12,13 @@
     <title>Catálogo HTML</title>
     <link rel="shortcut icon" href="img/www_favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+     <!-- Como poner imagen de cabecera adaptada a tamaños de pantalla -->
     <header>
         <picture id="subir1">
             <source srcset="img/header_500.avif" media="(max-width: 500px)">
@@ -32,8 +36,18 @@
     
             </ul>
         </nav>
+        <p id="irAbajo"><a href="#footer1">Ir abajo</a></p>
     </header>
     <main>
+        <section>
+            <h2>Introduccion a HTML</h2>
+            <p>La sintaxis basica de HTML es:</p>
+            <pre>        
+                &lt;nombre_etiqueta&gt;Contenido&lt;/nombre_etiqueta&gt;
+                &lt;nombre_etiqueta nombre_atributo="valor"&gt;Contenido&lt;/nombre_etiqueta&gt;
+                &lt;nombre_etiqueta atributo_booleano&gt;Contenido&lt;/nombre_etiqueta&gt; 
+            </pre>
+        </section>
 
     </main>
     <footer>
@@ -46,11 +60,8 @@
     </div>
     <!-- 1. Etiquetas de texto -->
     <!-- 1.1 - Títulos  -->
-        <!-- <nombre_etiqueta>Contenido</nombre_etiqueta>
-        <nombre_etiqueta>
-        <nombre_etiqueta nombre_atributo="valor">Contenido</nombre_etiqueta>
-        <nombre_etiqueta atributo_booleano>Contenido</nombre_etiqueta> -->
-        <a id="irAbajo" href="#footer1">Ir abajo</a>
+
+        
         <!-- Estas son las etiquetas para poner un título -->
         <!-- Atencion:  No existe H7 -->
         <h1>Soy un título h1</h1>
@@ -95,6 +106,20 @@
             <li>India</li>
             <li>Estados Unidos</li>
         </ol>
+
+
+    <!-- 2.3 listas descriptivas -->
+        <dl>
+            <dt>HTML</dt>
+            <dd>Es el lenguaje de las páginas</dd>
+            <dt>CSS</dt>
+            <dd>Sirve para dar estilos a las páginas</dd>
+            <dd>Sirve para dar estilos a las páginas</dd>
+
+        </dl>
+
+
+
     <!-- 3. Tablas -->
     <h2>Ejemplos de facturas</h2>
     <table>
@@ -170,8 +195,6 @@
          </main> 
          <footer></footer> <!--Redes sociales, contacto, avisos legales-->
 
-    <!-- Como poner imagen de cabecera -->
-
-          
+   
 </body>
 </html>
